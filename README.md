@@ -17,13 +17,13 @@ it should be-
 
 Windows.WorkingDirectory=C:\ProgramData\CODESYS\CODESYSControlSoftMotionWinV3x64\82CB2619\
 
->go to above location and open the file "CODESYSSoftMotion.cfg" with editor. 
+go to above location and open the file "CODESYSSoftMotion.cfg" with editor. 
 
->here remove the ";" sign at the very start of the line where number for "NetworkPort" of OPCUA server is defined:
+Here remove the ";" sign at the very start of the line where number for "NetworkPort" of OPCUA server is defined:
 [CmpOPCUAServer]
 ;NetworkPort=4840 ;Configure the port used by the OPC UA server. Default: 4840    
 
->Then change the "NetworkPort" number to 4841. It should be like this:
+Then change the "NetworkPort" number to 4841. It should be like this:
 NetworkPort=4841 ;Configure the port used by the OPC UA server. Default: 4840 
 
 In my case I have used "NetworkPort=4841", you can use other numbers as well e.g. 4838, 4842, just make sure those ports are not in use.
